@@ -68,7 +68,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen>
                           customVerticalSpace(height: 8),
                           customButtonwithIcon(
                             buttonWidth: MediaQuery.of(context).size.width,
-                            buttonTitle: 'Login',
+                            buttonTitle: index == 0 ? 'Login' : 'Daftar',
                             buttonOnTapped: () {},
                             buttonIcon: Icons.arrow_forward,
                           ),

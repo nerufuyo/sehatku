@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sehatku/presentation/screens/authentication/login_screen.dart';
-import 'package:sehatku/presentation/style/typography.dart';
+import 'package:sehatku/presentation/screens/authentication/authentication_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,22 +8,22 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Sehatku',
+      initialRoute: AuthenticationScreen.routeName,
       onGenerateRoute: (settings) {
         switch (settings.name) {
-          case LoginScreen.routeName:
+          case AuthenticationScreen.routeName:
             return MaterialPageRoute(
-              builder: (context) => const LoginScreen(),
+              builder: (context) => const AuthenticationScreen(),
             );
 
           default:
             return MaterialPageRoute(
-              builder: (context) => const LoginScreen(),
+              builder: (context) => const AuthenticationScreen(),
             );
         }
       },

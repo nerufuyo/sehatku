@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "nama": "Alat Pemeriksaan Tekanan Darah",
+        "harga": "Rp 300.000",
+        "status": "Tersedia",
+        "kategori": "Alat Kesehatan",
+        "penilaian": 4.5,
+        "tempat": "Apotek Sehat Sentosa",
+        "gambar": "https://cf.shopee.co.id/file/18a5a0264cc4275abd5346b73684d9af"
+    },
+    {
+        "id": 2,
+        "nama": "Pemeriksaan Gula Darah",
+        "harga": "Rp 150.000",
+        "status": "Tersedia",
+        "kategori": "Alat Kesehatan",
+        "penilaian": 4.2,
+        "tempat": "Klinik Sehat Bersama",
+        "gambar": "https://cdn2.iconfinder.com/data/icons/medical-flat-icons-part-1/513/18-512.png"
+    },
+    {
+        "id": 3,
+        "nama": "Konsultasi Dokter Umum",
+        "harga": "Rp 200.000",
+        "status": "Tersedia",
+        "kategori": "Layanan Kesehatan",
+        "penilaian": 4.8,
+        "tempat": "Rumah Sakit Medika",
+        "gambar": "https://cdn2.iconfinder.com/data/icons/medical-flat-icons-part-1/513/18-512.png"
+    },
+    {
+        "id": 4,
+        "nama": "Neonatal ICU Care",
+        "harga": "Rp 2.500.000",
+        "status": "Tersedia",
+        "kategori": "Layanan Kesehatan",
+        "penilaian": 4.9,
+        "tempat": "RS Pediatri Sentosa",
+        "gambar": "https://cdn2.iconfinder.com/data/icons/medical-flat-icons-part-1/513/18-512.png"
+    },
+    {
+        "id": 5,
+        "nama": "Masker Medis",
+        "harga": "Rp 10.000",
+        "status": "Tersedia",
+        "kategori": "Alat Kesehatan",
+        "penilaian": 4.0,
+        "tempat": "Apotek Sehat Sentosa",
+        "gambar": "https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/6/16/769742cb-031c-4cd2-802d-13713d940a74.jpg"
+    },
+    {
+        "id": 6,
+        "nama": "Pemeriksaan Kolesterol",
+        "harga": "Rp 180.000",
+        "status": "Tersedia",
+        "kategori": "Alat Kesehatan",
+        "penilaian": 4.4,
+        "tempat": "Klinik Sehat Bersama",
+        "gambar": "https://cdn2.iconfinder.com/data/icons/medical-flat-icons-part-1/513/18-512.png"
+    },
+    {
+        "id": 7,
+        "nama": "Konsultasi Gigi",
+        "harga": "Rp 120.000",
+        "status": "Tersedia",
+        "kategori": "Layanan Kesehatan",
+        "penilaian": 4.6,
+        "tempat": "Dokter Gigi Prima",
+        "gambar": "https://cdn2.iconfinder.com/data/icons/medical-flat-icons-part-1/513/18-512.png"
+    },
+    {
+        "id": 8,
+        "nama": "Alat Pernapasan Nebulizer",
+        "harga": "Rp 250.000",
+        "status": "Tersedia",
+        "kategori": "Alat Kesehatan",
+        "penilaian": 4.2,
+        "tempat": "Apotek Sehat Sentosa",
+        "gambar": "https://www.galerimedika.com/image/catalog/pavblog/img/compressor-nebulizer.jpg"
+    },
+    {
+        "id": 9,
+        "nama": "Pemeriksaan Mata",
+        "harga": "Rp 160.000",
+        "status": "Tersedia",
+        "kategori": "Layanan Kesehatan",
+        "penilaian": 4.7,
+        "tempat": "Klinik Mata Sejahtera",
+        "gambar": "https://cdn2.iconfinder.com/data/icons/medical-flat-icons-part-1/513/18-512.png"
+    },
+    {
+        "id": 10,
+        "nama": "Hand Sanitizer",
+        "harga": "Rp 15.000",
+        "status": "Tidak Tersedia",
+        "kategori": "Alat Kesehatan",
+        "penilaian": 0,
+        "tempat": "Apotek Sehat Sentosa",
+        "gambar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.popshelf.com%2Fcontent%2Fdam%2Fproduct-images%2F02735591-1.jpg&f=1&nofb=1&ipt=2bc23b93bd287e56dec6fc957ac9b5d1f264c0968ef9097c9995dc4d6e8b184e&ipo=images"
+    }
+]

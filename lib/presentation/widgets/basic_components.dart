@@ -94,13 +94,14 @@ InkWell customButtonwithIcon({
   required String buttonTitle,
   required buttonOnTapped,
   required buttonIcon,
+  buttonColor,
 }) {
   return InkWell(
     onTap: buttonOnTapped,
     child: Container(
       width: buttonWidth,
       decoration: BoxDecoration(
-        color: primary,
+        color: buttonColor ?? primary,
         borderRadius: BorderRadius.circular(8),
       ),
       padding: const EdgeInsets.all(16),
@@ -114,6 +115,38 @@ InkWell customButtonwithIcon({
           ),
           Icon(buttonIcon, color: white0)
         ],
+      ),
+    ),
+  );
+}
+
+TabBar customTabBar({
+  required tabBarController,
+  required tabBarOnTapped,
+  required tabBarLength,
+  required tabBarName,
+  required tabBarTextColor,
+  required tabBarIndicatorColor,
+  required tabBarSelectedColor,
+}) {
+  return TabBar(
+    controller: tabBarController,
+    padding: const EdgeInsets.symmetric(horizontal: 20),
+    isScrollable: true,
+    indicator: BoxDecoration(
+      borderRadius: BorderRadius.circular(40),
+      color: tabBarIndicatorColor,
+    ),
+    onTap: (index) => tabBarOnTapped(index),
+    tabs: List.generate(
+      tabBarLength,
+      (index) => Tab(
+        child: customText(
+          textValue: tabBarName[index],
+          textStyle: body2.copyWith(
+            color: tabBarTextColor == index ? tabBarSelectedColor : white20,
+          ),
+        ),
       ),
     ),
   );

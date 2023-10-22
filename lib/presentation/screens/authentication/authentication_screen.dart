@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sehatku/common/constant.dart';
+import 'package:sehatku/presentation/bloc/user/user_bloc.dart';
 import 'package:sehatku/presentation/screens/authentication/authentication_controller.dart';
+import 'package:sehatku/presentation/screens/home/home_screen.dart';
 import 'package:sehatku/presentation/style/pallet.dart';
 import 'package:sehatku/presentation/style/typography.dart';
 import 'package:sehatku/presentation/widgets/basic_components.dart';
@@ -13,8 +16,7 @@ class AuthenticationScreen extends StatefulWidget {
   State<AuthenticationScreen> createState() => _AuthenticationScreenState();
 }
 
-class _AuthenticationScreenState extends State<AuthenticationScreen>
-    with SingleTickerProviderStateMixin {
+class _AuthenticationScreenState extends State<AuthenticationScreen> {
   final PageController pageController = PageController();
   final TextEditingController emailController = TextEditingController(),
       passwordController = TextEditingController(),
@@ -69,7 +71,22 @@ class _AuthenticationScreenState extends State<AuthenticationScreen>
                           customButtonwithIcon(
                             buttonWidth: MediaQuery.of(context).size.width,
                             buttonTitle: index == 0 ? 'Login' : 'Daftar',
-                            buttonOnTapped: () {},
+                            buttonOnTapped: () {
+                              switch (index) {
+                                case 0:
+                                  BlocProvider.of<UserBloc>(context)
+                                      .add(PostUserEvent(
+                                    email: emailController.text,
+                                    password: passwordController.text,
+                                  ));
+                                  Navigator.pushNamed(
+                                      context, HomeScreen.routeName);
+                                  break;
+                                case 1:
+                                  null;
+                                  break;
+                              }
+                            },
                             buttonIcon: Icons.arrow_forward,
                           ),
                           customVerticalSpace(height: 16),

@@ -12,6 +12,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_bloc: ^8.1.3
   lottie: ^2.7.0
+  http: ^1.1.0
+  equatable: ^2.0.5
+  get_it: ^7.6.4
+  provider: ^6.0.5
+  path_provider: ^2.1.1
+  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +28,7 @@ flutter:
   uses-material-design: true
   assets:
     - lib/assets/images/
+    - lib/assets/json/
   fonts:
     - family: Gilroy
       fonts:
